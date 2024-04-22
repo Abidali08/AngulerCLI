@@ -1,0 +1,72 @@
+{
+    "user":[
+        {
+            "name":"Abid Ali",
+            "mobnumber":"45678",
+            "age": 27,
+            "dob":"1997-05-12",
+            "email":"abid@gmail.com",
+            "password":"123456789",
+            "address":{
+                "addLine1":"District South",
+                "addLine2":"Karachi",
+                "city":"Karachi",
+                "state":"Sindh",
+                "zipCode":"75550"
+            },
+            "language":[
+                "Urdu",
+                "English"
+            ],
+            "gender":"Male",
+            "aboutYou":"DEveloper",
+            "uploadPhoto":"abc.png",
+            "agreetc":true,
+            "role":"admin",
+            "id":1
+        }
+    ],
+    "products":[
+        {
+            "id":1,
+            "name":"Angular Book",
+            "uploadPhoto":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FLearning-Angular-no-nonsense-building-applications%2Fdp%2F1803240601&psig=AOvVaw1reQsCkTRHhwidDx3PaeBO&ust=1713875759987000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPjS5dnq1YUDFQAAAAAdAAAAABAJ",
+            "mrp":"1000",
+            "dp":"499",
+            "status":"publish"
+        },
+        {
+            "id":2,
+            "name":"Java Book",
+            "uploadPhoto":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.packtpub.com%2Fproduct%2Fangular-projects-third-edition%2F9781803239118&psig=AOvVaw1reQsCkTRHhwidDx3PaeBO&ust=1713875759987000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPjS5dnq1YUDFQAAAAAdAAAAABAZ",
+            "mrp":"1000",
+            "dp":"499",
+            "status":"publish"
+        }
+
+    ],
+    "orders":[
+        {
+            "id":1,
+            "userId":1,
+            "sellerId":1,
+            "product":{
+                "name":"Java Book",
+                "uploadPhoto":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.packtpub.com%2Fproduct%2Fangular-projects-third-edition%2F9781803239118&psig=AOvVaw1reQsCkTRHhwidDx3PaeBO&ust=1713875759987000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPjS5dnq1YUDFQAAAAAdAAAAABAZ",
+                "mrp":"1000",
+                "dp":"499",
+                "status":"publish"
+            },
+            "deliveryAddress":{
+                "id":0,
+                "addLine1":"District South",
+                "addLine2":"Karachi",
+                "city":"Karachi",
+                "state":"Sindh",
+                "zipCode":"75550"
+            },
+            "contact":"6574897",
+            "dateTime":"18/04/2024"
+        }
+    ]
+}

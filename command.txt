@@ -1,0 +1,58 @@
+npm install -g json-server
+
+****Create Impoertant Modules**********
+ng g module admin
+ng g module core
+ng g module customer
+ng g module shared
+
+*****Create Important main componensts*************
+ng g c home
+ng g c contact-us
+ng g c product
+ng g c user-profile
+
+**********Module Wise Components and Services ect..*************
+ng g c admin/admin-dashboard
+ng g c admin/admin-login
+ng g c admin/user-crud
+ng g s admin/services/admin
+
+
+***********************************************************
+ng g s core/service/api
+ng g interceptor core/interceptors/http
+make models in core folder name object
+
+********************customer*********************************
+ng g c customer/buyer/buyer-dashboard
+ng g c customer/buyer/checkout
+ng g c customer/seller/seller-dashboard
+ng g c customer/signin-signup
+ng g s customer/services/customer
+
+**********Shared************************
+ng g d shared/directives/number-only
+ng g c shared/layouts/footer
+ng g c shared/layouts/header
+ng g c shared/layouts/page-not-found
+ng g s shared/services/auth-guard
+ng g s shared/services/login-signup
+ng g s shared/services/product
+ng g s shared/services/user
+
+
+****************Install Bootstrap**************
+npm i bootstrap@5.3.2
+
+*************ngx-toastr********************
+npm install ngx-toastr --save
+npm install @angular/animations --save
+
+
+*********ngx-translate/core***********
+npm install @ngx-translate/core --save
+
+
+*************Execute Api using json server************
+json-server --watch mock-api-data.json
