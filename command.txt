@@ -56,3 +56,165 @@ npm install @ngx-translate/core --save
 
 *************Execute Api using json server************
 json-server --watch mock-api-data.json
+
+
+
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h3>Registration</h3>
+
+                <form [formGroup]="signUpform" (ngSubmit)="onSubmitSignUp">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" formControlName="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobNumber">Mobile Number</label>
+                        <input type="tel" class="form-control" formControlName="mobNumber">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Enter your Age </label>
+                        <input type="number" class="form-control" formControlName="age">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Enter your DOB </label>
+                        <input type="date" class="form-control" formControlName="dob">
+                    </div>
+
+                    <!-- new row -->
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" formControlName="email">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" formControlName="password">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="address1">Address 1</label>
+                            <input type="text" class="form-control" formControlName="addLine1">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="address2">Address 2</label>
+                            <input type="text" class="form-control" formControlName="addLine2">
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" formControlName="city">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="state">State</label>
+                            <select id="inputState" class="form-control" formControlName="state">
+                                <option selected>Choose</option>
+                                <option>.....</option>                                
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-2">
+                            <label for="zipCode">Zip Code</label>
+                            <input type="text" class="form-control" formControlName="zipCode">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="language">Language</label>
+                        <select multiple class="form-control" formControlName="language">
+                            <option>Urdu</option>
+                            <option>English</option>
+                            <option>Shina</option>
+                            <option>Pushto</option>
+                            <option>Sindhi</option>
+                            <option>Balochi</option>
+                            <option>Punjabi</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-inline" formControlName="gender" value="Male">
+                            <label for="male" class="form-check-inline">Male</label>
+                                                  </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-inline" formControlName="gender" value="Female">
+                            <label for="female" class="form-check-inline">Female</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-inline" formControlName="gender" value="Others">
+                            <label for="others" class="form-check-inline">Others</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="aboutYou">Something About You </label>
+                        <textarea class="form-control" formControlName="aboutYou" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="uploadPhoto">Picture </label>
+                        <input type="file" formControlName="uploadPhoto" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" formControlName="agreetc" class="form-control" class="form-check-inline">
+                        <label for="agreetc" class="form-check-inline">Terms and Conditions</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">What Do you want ?</label>
+                        <select class="form-control" formControlName="role">
+                            <option value="seller">Seller</option>
+                            <option value="buyer">Buyer</option>                                
+                        </select>
+                    </div>
+
+                    <div class="form-group p-3">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+
+                    <a class="sim-pointer" routerLink="/sign-in">Already Have an Account Click Here to Login!</a>
+            
+                </form>
+            </div>
+
+            <div class="col-md-6 offset-md-3">
+                <h3>Login</h3>
+
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="userEmail" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="userPassword" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-primary">Login</button>
+                    </div>
+
+                    <a class="sim-pointer" routerLink="/sign-up">Don't Have an Account Click Here to Login!</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
